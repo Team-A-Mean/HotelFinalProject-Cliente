@@ -1,4 +1,21 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<md-toolbar color="accent">
+    <div class="row">
+        <div class="col-xs-2" (click)="sidenav.toggle()">
+            <md-icon>reorder</md-icon>
+        </div>
+        <div class="col-xs-10">
+            <span>Hotel Mean</span>
+        </div>
+    </div>
+</md-toolbar>
+<md-sidenav-layout>
+    <md-sidenav #sidenav mode="push" (click)="sidenav.close()">
+        <a routerLinkActive="routerActivate" routerLink="['/home']">Home</a>
+        <a routerLinkActive="routerActivate" routerLink="['/about']">About</a>
+        <a routerLinkActive="routerActivate" routerLink="['/todo']">Todo</a>
+        <a routerLinkActive="routerActivate" routerLink="['/lazy']">Lazy</a>
+    </md-sidenav>
+    <md-card>
+        <router-outlet></router-outlet>
+    </md-card>
+</md-sidenav-layout>
