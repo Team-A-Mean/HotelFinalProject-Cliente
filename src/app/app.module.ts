@@ -1,3 +1,4 @@
+import { ReservasModule } from './reservas/reservas.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -15,8 +16,9 @@ import { MaterialModule } from '@angular/material'
     BrowserModule,
     FormsModule,
     HttpModule,
+    ReservasModule,
     AppRoutingModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
