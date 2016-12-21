@@ -10,10 +10,10 @@
 </md-toolbar>
 <md-sidenav-layout>
     <md-sidenav #sidenav mode="push" (click)="sidenav.close()">
-        <a routerLinkActive="routerActivate" routerLink="['/home']">Home</a>
-        <a routerLinkActive="routerActivate" routerLink="['/reservas']">Reservas</a>
-        <a routerLinkActive="routerActivate" routerLink="['/Administrador']">Administrador</a>
-        <a routerLinkActive="routerActivate" routerLink="['/About']">About</a>
+        <a routerLinkActive="routerActivate" [routerLink]="['/inicio']">Inicio</a>
+        <a routerLinkActive="routerActivate" [routerLink]="['/reservas']">Reservas</a>
+        <a routerLinkActive="routerActivate" [routerLink]="['/admin']">Administrador</a>
+        <a routerLinkActive="routerActivate" [routerLink]="['/nosotros']">Nosotros</a>
     </md-sidenav>
     <md-card>
         <router-outlet></router-outlet>

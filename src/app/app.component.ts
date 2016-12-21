@@ -1,12 +1,9 @@
-import { AppRoutingModule } from './app-routing.module';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'home',
+  selector: 'app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers:[AppRoutingModule]
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
 }

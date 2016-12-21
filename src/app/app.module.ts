@@ -1,3 +1,6 @@
+import { NosotrosModule } from './nosotros/nosotros.module';
+import { AdministradorModule } from './administrador/administrador.module';
+import { HomeModule } from './home/home.module';
 import { ReservasModule } from './reservas/reservas.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,7 +19,10 @@ import { MaterialModule } from '@angular/material'
     BrowserModule,
     FormsModule,
     HttpModule,
+    HomeModule,
     ReservasModule,
+    AdministradorModule,
+    NosotrosModule,
     AppRoutingModule,
     MaterialModule.forRoot(),
   ],

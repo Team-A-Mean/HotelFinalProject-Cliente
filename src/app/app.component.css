@@ -1,4 +1,4 @@
-.routerActivate { background-color:blue; }
+.routerActivate { background-color:lightgrey; }
 md-sidenav-layout{
 height:100vh;
 }
@@ -28,4 +28,5 @@ md-sidenav a:hover{
 md-icon{
     cursor: pointer;
 }
+
 
