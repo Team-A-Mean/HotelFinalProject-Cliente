@@ -9,11 +9,14 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { MaterialModule } from '@angular/material'
+import { MaterialModule } from '@angular/material';
+import { FormularioComponent } from './formulario/formulario.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import { MaterialModule } from '@angular/material'
     NosotrosModule,
     AppRoutingModule,
     MaterialModule.forRoot(),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

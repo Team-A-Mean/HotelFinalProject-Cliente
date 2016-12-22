@@ -1,3 +1,25 @@
-<p>
-  reservas works!
-</p>
+<div class="container center-xs">
+  <md-input md-input type="date" placeholder="Fecha de Entrada"></md-input>
+  <md-input md-input type="date" placeholder="Fecha de Salida"></md-input>
+  <div>
+    <button md-raised-button color="primary">ENVIAR</button>
+  </div>
+</div>
+<br>
+<md-nav-list>
+  <md-card>
+    <md-list-item>
+      <p md-line>HABITACION DUPLEX</p>
+      <div style="margin-right:80px">500€</div>
+      <button md-raised-button (click)="showInfo(link)" color="primary">Reservar</button>
+    </md-list-item>
+  </md-card>
+</md-nav-list>
+
+<button md-fab class="chat">
+    <md-icon class="md-24">chat</md-icon>
+</button>
+<!--<router-outlet></router-outlet>-->
+
+
+
