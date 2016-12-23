@@ -1,21 +1,13 @@
-<md-toolbar color="accent">
+
+<md-sidenav-layout>
     <div class="row">
-        <div class="col-xs-2" (click)="sidenav.toggle()">
+        <div class="col-xs-12" (click)="sidenav.toggle()">
             <md-icon>reorder</md-icon>
         </div>
-        <div class="col-xs-10">
-            <span>Hotel Mean</span>
-        </div>
     </div>
-</md-toolbar>
-<md-sidenav-layout>
-    <md-sidenav #sidenav mode="push" (click)="sidenav.close()">
+    <md-sidenav #sidenav mode="over" (click)="sidenav.close()">
         <a routerLinkActive="routerActivate" [routerLink]="['/inicio']">Inicio</a>
-        <a routerLinkActive="routerActivate" [routerLink]="['/reservas']">Reservas</a>
         <a routerLinkActive="routerActivate" [routerLink]="['/admin']">Administrador</a>
-        <a routerLinkActive="routerActivate" [routerLink]="['/nosotros']">Nosotros</a>
     </md-sidenav>
-    <md-card>
         <router-outlet></router-outlet>
-    </md-card>
 </md-sidenav-layout>

@@ -1,25 +1,31 @@
+<div class="video-container">
+  <video autoplay loop width="1280" height="720">
+    <source src="../../assets/Slow-Fall.mp4" type="video/mp4">
+    <source src="../../assets/Slow-Fall.webm" type="video/webm">
+  </video>
+</div>
 <div class="container center-xs">
-  <md-input md-input type="date" placeholder="Fecha de Entrada"></md-input>
-  <md-input md-input type="date" placeholder="Fecha de Salida"></md-input>
+  <h1>Hotel Mean</h1>
+  <h2>Selecciona tu fecha</h2>
+  <md-card class="mycenter">
+  <md-input type="date" placeholder="Fecha de Entrada"></md-input>
+  <md-input type="date" placeholder="Fecha de Salida"></md-input>
   <div>
-    <button md-raised-button color="primary">ENVIAR</button>
+ <button class="button" md-raised-button color="primary" (click)="getHabitaciones()">Buscar</button>
   </div>
+  </md-card>
 </div>
 <br>
-<md-nav-list>
+<md-nav-list class="container">
   <md-card>
-    <md-list-item>
-      <p md-line>HABITACION DUPLEX</p>
-      <div style="margin-right:80px">500€</div>
-      <button md-raised-button (click)="showInfo(link)" color="primary">Reservar</button>
-    </md-list-item>
-  </md-card>
+    <md-list-item *ngFor=" let habitacion of habitaciones">
+      <p md-line>Habitacion {{habitacion.tipo}} {{habitacion.categoria}}</p>
+      <div style="margin-right:80px">{{habitacion.precio}}€</div>
+<button md-raised-button color="primary" [routerLink]="['/inicio/reserva']">Reservar</button>
+</md-list-item>
+</md-card>
 </md-nav-list>
-
 <button md-fab class="chat">
     <md-icon class="md-24">chat</md-icon>
 </button>
 <!--<router-outlet></router-outlet>-->
-
-
-

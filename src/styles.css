@@ -3,3 +3,12 @@ body{
     margin: 0px;
     padding: 0px;
 }
+*{
+font-family: 'Raleway', sans-serif;
+}
+h1, h2{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+

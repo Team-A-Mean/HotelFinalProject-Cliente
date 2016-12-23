@@ -1,31 +1,22 @@
 <div class="container center-xs">
-  <div>
+    <div class="background-image">
+      <img src="../../assets/imagen2.jpg" height="900" width="1280" alt="">
+    </div>
+    <h1>Completar Reserva</h1>
+  <md-card class="mycenter">
     <md-input md-input type="text" placeholder="Nombre"></md-input>
-  </div>
-  <div>
-    <md-input md-input type="email" placeholder="mi@email.com"></md-input>
-  </div>
-  <br>
-  <div>
+    <md-input md-input type="email" placeholder="Email"></md-input>
+    <br><br>
     <md-input md-input type="text" placeholder="Tipo de habitación" value="Superior" readonly></md-input>
-  </div>
-  <div>
     <md-input md-input type="text" placeholder="Fecha de entrada" value="30/12/16" readonly></md-input>
-  </div>
-  <div>
     <md-input md-input type="text" placeholder="Fecha de salida" value="31/12/16" readonly></md-input>
-  </div>
-  <div>
     <md-input md-input type="text" placeholder="Precio" value="500€" readonly></md-input>
-  </div>
-  <div>
-
-    <!--<button md-raised-button color="primary">Confirmar</button>-->
-  </div>
+    <div>
+      <button class="button" md-raised-button color="primary">Confirmar</button>
+      <button class="button" md-raised-button color="warn" [routerLink]="['/inicio']">Cancelar</button>
+    </div>
+  </md-card>
 </div>
-
-
-
 
 <button md-fab class="chat">
     <md-icon class="md-24">chat</md-icon>

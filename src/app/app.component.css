@@ -1,35 +1,52 @@
-.routerActivate { background-color:lightgrey; }
+.routerActivate {
+    background-color: rgb(255, 255, 255);
+    color: black !important;
+ }
 md-sidenav-layout{
 height:100vh;
 }
-
-
 md-sidenav{
-    width: 200px;
-}
+    width: 100%;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
+}
 md-sidenav a{
-    display: block;
-    text-align:left;
+    text-align:center;
     padding: 0.5em 1em;
-    color: black;
+    color: white;
     font-weight: bold;
     margin: 0.5em 0;
     text-transform: uppercase;
-    text-decoration:none
+    text-decoration:none;
 }
 
-md-sidenav a:nth-child(1){
+/*md-sidenav a:nth-child(1){
     margin-top:2em;
-}
+}*/
 md-sidenav a:hover{
-    background-color: lightgrey;
+    background-color: rgb(255, 255, 255);
+    color: black;
+
 }
 md-icon{
     cursor: pointer;
+    color: white;
+    margin-left: 1em;
+    margin-top: 1em;
+    font-size: 2rem;
 }
-md-card{
-    height:100vh;
-}
+
+
+
+
+
+
+
+
+
+
 
 

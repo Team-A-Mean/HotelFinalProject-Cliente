@@ -4,9 +4,6 @@ import { ReservasRoutingModule } from './reservas-routing.module';
 import { ReservasComponent } from './reservas.component';
 import { MaterialModule } from '@angular/material';
 
-
-
-
 @NgModule({
   imports: [
     CommonModule,
@@ -16,4 +13,7 @@ import { MaterialModule } from '@angular/material';
   ],
   declarations: [ReservasComponent]
 })
-export class ReservasModule { }
+export class ReservasModule {
+
+
+}

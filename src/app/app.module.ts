@@ -1,6 +1,4 @@
-import { NosotrosModule } from './nosotros/nosotros.module';
 import { AdministradorModule } from './administrador/administrador.module';
-import { HomeModule } from './home/home.module';
 import { ReservasModule } from './reservas/reservas.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -11,26 +9,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
 import { FormularioComponent } from './formulario/formulario.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { DialogsService } from './dialogs.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioComponent
+    FormularioComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    HomeModule,
     ReservasModule,
     AdministradorModule,
-    NosotrosModule,
     AppRoutingModule,
     MaterialModule.forRoot(),
 
   ],
-  providers: [],
+  providers: [DialogsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

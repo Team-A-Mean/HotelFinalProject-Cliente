@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'reservas', component: ReservasComponent,
+    path: 'inicio', component: ReservasComponent,
 
     //  children: [
     //   {
@@ -16,7 +16,7 @@ const routes: Routes = [
     // ]
 
   },
-  { path: 'reservas/formulario', component: FormularioComponent }
+  { path: 'inicio/reserva', component: FormularioComponent }
 ]
 
 @NgModule({
